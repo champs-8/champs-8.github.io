@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;1,100&family=Kanit:wght@100&family=Oswald:wght@300&family=Poppins:wght@100&family=Quicksand:wght@300;400&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <title>Portifólio Fábio</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="flex items-center justify-between">
+                <div class="left flex justify-right">
+                    <div class="logo">
+                        <img src="media/logo.png" alt="logo" id="logo">
+                    </div>
+                    <div>
+                        <button id="s" class="ancoras">sobre</button>
+                        <button id="t" class="ancoras">conhecimento</button>
+                        <button id="p" class="ancoras">projetos</button>
+                        <button id="m" class="ancoras">mais</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="btn btn-primary" id="btnCont">Contato</button>
+                </div>              
+            </nav>
+        </div>
+    </header>
+    <div class="hero flex items-center justify-between" id="hero">
+       <div class="left flex-1 justify-center">
+            <img src="media/modelo.jpg" alt="Profile">
+       </div>
+       <div class="right flex-1">
+            <h6>Fábio Santos</h6>
+            <h1>I'm a Web <br><span> Developer </span></h1>
+            <p>Chamo-me Fábio, mas pode me chamar de CHAMPS &#128521;<br>Tenho 21 anos e mostrarei um pouco do trabalho que amo desenvolver. Divirta-se!</p>
+            <div>
+                <button class="btn btn-secundary">DOWNLOAD CV</button>
+            </div>
+       </div>
+    </div>
+    <section class="about" id="about">
+        <div class="container flex items-center">
+            <div class="left flex-1 justify-right">
+                <img src="media/sexta feira.jpg" alt="fotoSobre" height="350px">
+            </div>
+            <div class="right flex-1">
+                <h1>Sobre <span>Mim</span></h1>
+                <h3>Olá! Sou Fábio Santos</h3>
+                <p>Sempre tive muito sonhos, mas nunca tive tanta certeza do que queria ser como quando decidi que queria ser <span> Programmer</span>. Meu foco principal é atuar no <span>Front</span>, mas também tenho conhecimentos em server-side.<span> Foco</span> e <span>determinação</span> são pontos que me destacam nessa caminhada binária.</p>
+                <div class="phrase flex">
+                    <span>“</span><i> Conhecimento não é aquilo que você sabe, mas o que você faz com aquilo que sabe”</i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="flex tecnologias" id="tecnologias">
+        <div class="container flex">
+            <div class="top flex">
+                <h1>Linguagens e Tecnologias </h1>
+            </div>
+            <div class="bottom flex">
+                <div class="tecs flex">
+                    <div class="tec" id="html"><img src="media/html.png" alt="html"></div>
+                    <div class="tec"id="css"><img src="media/css.png" alt="css"></div>
+                    <div class="tec" id="js"><img src="media/js.png" alt="js"></div>
+                    <div class="tec"id="mysql"><img src="media/mysql.png" alt=""></div>
+                    <div class="tec"></div>
+                    <div class="tec"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects flex" id="projects">
+        <div class="container flex">
+            <h1>Meus projetos</h1>
+            <div class="card flex">
+                <div class="proj flex activeSlide">
+                    <img src="/media/calc.jpg" alt="calculadora">
+                </div>
+                <div class="proj flex">
+                    <img src="/media/cron.jpg" alt="cronometro">
+                </div>
+                <div class="proj flex">
+                    <img src="/media/sort.jpg" alt="Sorteio times">
+                </div>
+            </div>
+            <div id="nextcard" class="nextcard flex">
+                <div class="descLink flex">
+                    <span id="spanDesc" class="flex"></span>
+                    <a href="#" id="linkProject" target="_blank">link do projeto</a>
+                    <!-- [0] https://champs-8.github.io/Projetos/Calculadora/index.html -->
+                    <!-- [1] https://champs-8.github.io/Projetos/Despertador/index.html -->
+                    <!-- [2] https://champs-8.github.io/Projetos/SorteioFutebol/index.html -->
+                    <div class="nextPrevious flex">
+                        <img src="/media/setaPraBaixo.png" id="btnNext" alt="Next Card">
+                        <img src="/media/setaPraCima.png" id="btnPrevious" alt="btnPrevious Card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact flex">
+        <div class="container flex column">
+            <h1>Contato</h1>
+            <div class="formulario flex">
+                <form action="" method="get" class="form flex">
+                    <div class="inputs flex">
+                        <div class="input-column flex">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="input-column flex">
+                            <label for="phone">Telefone</label>
+                            <input type="number" name="phone" id="phone" required>
+                        </div>
+                        <div class="input-column flex">
+                            <label for="email">E-mail</label>
+                            <input type="text" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="txtarea flex">
+                        <label for="mensagem">Menssagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="100" rows="5" placeholder="Envie um feedback"></textarea>
+                        <button type="submit" id="message">Enviar menssagem</button>
+                    </div>
+                </form>
+            </div>
+            <div class="socials flex">
+                <div class="redesSoc flex">
+                    <div class="email icons flex">
+                        <a href= "mailto:fabio.s.dev@outlook.com?" subject="link HTML"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <div class="insta icons flex">
+                        <a href="https://www.instagram.com/fabio.s8/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <div class="linkedin icons flex">
+                        <a href="https://www.linkedin.com/in/fabios8/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="github icons flex">
+                        <a href="https://github.com/champs-8" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="face icons flex">
+                        <a href="https://www.facebook.com/fabio.8s" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex"><span> Creat by Fábio Santos || ÇHAMP$ - 2022</span></footer>
+    </section>
+    <button id="btnHome"><img src="/media/setaPraCima.png" alt=""></button>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/671d60d367.js" crossorigin="anonymous"></script>
+</body>
+</html>
