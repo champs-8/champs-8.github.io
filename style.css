@@ -450,3 +450,38 @@ footer span {
     font-size: .8em;
     color: #c0c0c0
 }
+@media screen and (max-width: 400px ){
+    body {
+        margin: 0;
+        background-color: slategray;
+        width: 100vw;
+        font-size: 16pt;
+    }
+    header {
+        display: none;
+    }
+    .hero {
+        height: 100vh;
+        width: 100vw;
+        background-color: brown;
+        margin: 0;
+    }
+    .hero .left img {
+        width: 200px;
+        border-radius: 10px;
+    }
+    .hero .left::after {
+        display: none;
+    }.hero .right {
+        width: 100vw;
+        float: right;
+    }
+
+
+
+
+
+    .card img {
+        width: 400px;
+    }
+}
