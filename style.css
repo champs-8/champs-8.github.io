@@ -453,9 +453,8 @@ footer span {
 @media screen and (max-width: 400px ){
     body {
         margin: 0;
-        background-color: slategray;
         width: 100vw;
-        font-size: 16pt;
+        font-size: 12pt;
     }
     header {
         display: none;
@@ -463,8 +462,7 @@ footer span {
     .hero {
         height: 100vh;
         width: 100vw;
-        background-color: brown;
-        margin: 0;
+        padding: 0;
     }
     .hero .left img {
         width: 200px;
@@ -472,16 +470,126 @@ footer span {
     }
     .hero .left::after {
         display: none;
-    }.hero .right {
+    }
+    .hero .right {
         width: 100vw;
         float: right;
+        text-align: center;
+        margin: 0;
     }
-
-
-
-
-
+    .hero .right h1{
+        width: 50%;
+        margin: 0;
+        font-size: 2.2em;
+        margin-left: .5rem;
+        text-align: left;
+    }
+    .hero .right h6 {
+        font-size: 1.2em;
+        text-align: right;
+        padding-right: .5em;
+    }
+    #about {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 0em;
+    }
+    #about .container {
+        height: max-content;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #about .container p {
+        text-align: left;
+        padding-left: .5em;
+    }
+    #about .container img {
+        border-radius: 10px;
+        width: 180px;
+        height: 320px;
+        position: relative;
+        top: -2em;
+    }
+    .tecnologias {
+        height: 25em;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }.tecnologias .container {
+        height: 20em;
+    }
+    .tecnologias .container .bottom {
+        width: 100%;
+    }
+    .projects {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
     .card img {
         width: 400px;
+    }
+    .proj {
+        height: 12em;
+        padding: 0;
+    }
+    .nextcard {
+        padding: 0 .5em;
+        height: auto;
+    }
+    .nextcard .descLink {
+        height: auto;
+        padding: 0;
+        border: none;
+    }
+    #spanDesc {
+        height: 9em;
+    }
+    .inputs {
+        width: 100vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .inputs .input-column {
+        width: 95%;
+    }
+    .input-column label {
+        padding-left: 1em;
+    }
+    .form {
+        width: 100vw;
+    }
+    .txtarea {
+        width: 100vw;
+        padding: 0;
+    }
+    .txtarea textarea {
+        width: 100vw;
+    }
+    .txtarea label {
+        padding: .5em 0 .5em 1.5em;
+    }
+    .txtarea button {
+        margin-left: 1em;
+    }
+    #btnHome {
+        top: 85%;
+        left:85%;
+    }
+    .icons {
+        width: 3em;
+        height: 3em;
+    }
+    .fa-envelope,
+    .fa-instagram,
+    .fa-linkedin-in,
+    .fa-github,
+    .fa-facebook{
+        font-size: 2em;
     }
 }
