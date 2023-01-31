@@ -26,6 +26,10 @@ const verifyDesc = () => {
         spanDesc.innerHTML = 'Um sorteador de times, independente do que for jogar ou se divertir, poderá utilizá-lo para poder separar times com confiança e agilidade'
         linkProject.href = 'https://champs-8.github.io/Projetos/SorteioFutebol/index.html';
     }
+    if(idActive == 3) {
+        spanDesc.innerHTML = 'Uma página criada para baixar mídias diretas do YouTube com segurança e praticidade, em diversos formatos e qualidades, excelente para quem gosta de edições.'
+        linkProject.href = 'https://champs-8.github.io/Projetos/Down_midias/index.html';
+    }
 }
 
 //trocar a imagem e descrção    //OK
