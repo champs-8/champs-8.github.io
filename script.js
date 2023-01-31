@@ -27,7 +27,7 @@ const verifyDesc = () => {
         linkProject.href = 'https://champs-8.github.io/Projetos/SorteioFutebol/index.html';
     }
     if(idActive == 3) {
-        spanDesc.innerHTML = 'Uma página criad para baixar mídias diretas do YouTube com segurança e praticidade, em diversos formatos e qualidades, excelente para quem gosta de edições.'
+        spanDesc.innerHTML = 'Uma página criada para baixar mídias diretas do YouTube com segurança e praticidade, em diversos formatos e qualidades, excelente para quem gosta de edições.';
         linkProject.href = 'https://champs-8.github.io/Projetos/Down_midias/index.html';
     }
 }
