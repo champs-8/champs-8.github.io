@@ -31,7 +31,7 @@ const verifyDesc = () => {
         linkProject.href = 'https://champs-8.github.io/Projetos/Down_midias/index.html';
     }
     if(idActive == 4) {
-        spanDesc.innerHTML = 'Uma página para quem precisar criar senhas com certa complixadade e está sem inspiração, um gerador de senhas online e bem simples. Tudo o que precisa é selecionar o que você quer e copiar.';
+        spanDesc.innerHTML = 'Precisa criar senhas com certa complixadade e está sem inspiração? um gerador de senhas online e bem simples. Tudo o que precisa é selecionar o que você quer e copiar.';
         linkProject.href = 'https://champs-8.github.io/Projetos/GeradorDeSenhas/index.html';
     }
 }

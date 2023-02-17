@@ -521,7 +521,7 @@ footer span {
         top: -2em;
     }
     .tecnologias {
-        height: 25em;
+        height: 100vh;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -569,6 +569,17 @@ footer span {
     }
     .form {
         width: 100vw;
+    }
+    .bottom {
+        max-width: 400px;
+    }
+    .tecs {
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 400px;
+    }
+    .tec {
+        height: min-content;
     }
     .txtarea {
         width: 100vw;
