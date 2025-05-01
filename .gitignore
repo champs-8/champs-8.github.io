@@ -1,0 +1,21 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.log
+*.tmp
+*.swp
+*.bak
+
+# Editor configs
+.vscode/
+.idea/
+
+# Node (caso use algum build com npm)
+node_modules/
+dist/
+build/
+
+# Cache
+.cache/
