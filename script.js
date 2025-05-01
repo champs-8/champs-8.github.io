@@ -1,7 +1,7 @@
 const nextCard = document.getElementById('btnNext'); //imagem da seta para proximo slide
 const previousCard = document.getElementById('btnPrevious');//imagem da seta pra anterior slide
 const projs = document.querySelectorAll('.proj');
-const spanDesc = document.querySelector('#spanDesc')
+const spanDesc = document.querySelector('#spanDesc');
 let arr = [];//mandar os projetos como node;
 
 //id dinamico
@@ -107,10 +107,10 @@ ancoraP.addEventListener('click', () => {
     scroll(0, 2082);
 });
 ancoraT.addEventListener('click', () => {
-    scroll(0, 1401);
+    scroll(0, 1429);
 })
 ancoraS.addEventListener('click', () => {
-    scroll(0, 744);
+    scroll(0, 772);
 })
 ancoraL.addEventListener('click', () => {
     scroll(0, 118);
@@ -118,6 +118,7 @@ ancoraL.addEventListener('click', () => {
 btnHome.addEventListener('click', () => {
     scroll(0, 0);
 })
+
 //sumir com botao home
 setInterval(()=>{
     const coordAbout = document.getElementById('about').getBoundingClientRect();
@@ -128,5 +129,25 @@ setInterval(()=>{
     }
 },500)
 
+//data de da ultima atualização, ao lado do botão  contato superior
+document.querySelector('#lastUpdate').textContent = new Date(document.lastModified).
+toLocaleDateString('pt-BR');
 
+//enviar mensagem do formulário de contato
+document.addEventListener("DOMContentLoaded", function () {
+const form = document.querySelector(".form");
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_txyvj9l', 'template_1at9mx8', form)
+    .then(function () {
+        alert('Mensagem enviada com sucesso!');
+        form.reset();
+    }, function (error) {
+        alert('Erro ao enviar. Tente novamente.');
+        console.log(error);
+    });
+});
+});
 

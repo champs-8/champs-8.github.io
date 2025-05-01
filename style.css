@@ -59,6 +59,11 @@ body {
     cursor: pointer;
     color: var(--primary);
 }
+#lastUpdate{
+    display: flex;
+    justify-content: center;
+    font-size: 0.8em;
+}
 .hero {
     padding-top: 1rem;
     padding-bottom:  3rem;
@@ -441,7 +446,8 @@ span#spanDesc {
 .fa-instagram,
 .fa-linkedin-in,
 .fa-github,
-.fa-facebook{
+.fa-facebook,
+.fa-whatsapp{
     font-size: 3em;
     background-color: var(--bgDark);
     color:var(--primary);
@@ -606,7 +612,8 @@ footer span {
     .fa-instagram,
     .fa-linkedin-in,
     .fa-github,
-    .fa-facebook{
+    .fa-facebook,
+    .fa-whatsapp{
         font-size: 2em;
     }
 }

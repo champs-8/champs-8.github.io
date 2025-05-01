@@ -28,7 +28,8 @@
                 </div>
                 <div class="right">
                     <button class="btn btn-primary" id="btnCont">Contato</button>
-                </div>              
+                    <p>Última atualização: <span id="lastUpdate"></span></p>
+                </div>
             </nav>
         </div>
     </header>
@@ -39,7 +40,7 @@
        <div class="right flex-1">
             <h6>Fábio Santos</h6>
             <h1>I'm a Web <br><span> Developer </span></h1>
-            <p>Chamo-me Fábio, mas pode me chamar de CHAMPS &#128521;<br>Tenho 21 anos e mostrarei um pouco do trabalho que amo desenvolver. Divirta-se!</p>
+            <p>Chamo-me Fábio, mas pode me chamar de CHAMPS &#128521;<br>Tenho 23 anos e mostrarei um pouco do trabalho que amo desenvolver. Divirta-se!</p>
             <div>
                 <a id='btn-down' href="docs/Fábio Santos.pdf" class="btn btn-secundary" download="Fábio_Santos.pdf">DOWNLOAD CV</a>
             </div>
@@ -50,13 +51,21 @@
             <div class="right flex-1">
                 <h1>Sobre <span>Mim</span></h1>
                 <h3>Olá! Sou Fábio Santos</h3>
-                <p>Sempre tive muito sonhos, mas nunca tive tanta certeza do que queria ser como quando decidi que queria ser <span> Programmer</span>. Meu foco principal é atuar no <span>Front</span>, mas também tenho conhecimentos em server-side.<span> Foco</span> e <span>determinação</span> são pontos que me destacam nessa caminhada binária.</p>
+                <p>Estou cursando Análise e Desenvolvimento de Sistemas, juntamente com alguns
+                    cursos frameworks e novas tecnologias, busco ter um conhecimento amplo
+                    e diversificado, para me tornar um profissional completo.
+                </p><br>
+                <p>Sempre tive muito sonhos, mas nunca tive tanta certeza do que 
+                    queria ser como quando decidi que queria ser <span>Programmer</span>. 
+                    Meu foco principal atualmente é o <span>Back-end</span>, 
+                    mas também tenho conhecimentos em client-side.<span> Foco</span> e <span>determinação</span> 
+                    para resolver problemas são pontos que me destacam nessa caminhada binária.</p>
                 <div class="phrase flex">
-                    <span>“</span><i> Conhecimento não é aquilo que você sabe, mas o que você faz com aquilo que sabe”</i>
+                    <span>“</span><i> Conhecimento não é aquilo que você sabe, mas o que você faz com aquilo que sabe.”</i>
                 </div>
             </div>
             <div class="left flex-1 justify-right">
-                <img src="media/sexta feira.jpg" alt="fotoSobre" height="350px">
+                <img src="media/modelo2.jpeg" alt="fotoSobre" height="450px">
             </div>
         </div>
     </section>
@@ -67,13 +76,13 @@
             </div>
             <div class="bottom flex">
                 <div class="tecs flex">
-                    <div class="tec" id="html"><img src="media/html.png" alt="html"></div>
-                    <div class="tec"id="css"><img src="media/css.png" alt="css"></div>
-                    <div class="tec" id="js"><img src="media/js.png" alt="js"></div>
-                    <div class="tec"id="mysql"><img src="media/mysql.png" alt="mysql"></div>
-                    <div class="tec"id="node"><img src="media/node.ico" alt="node"></div>
-                    <div class="tec"id="react"><img src="media/react.ico" alt="react"></div>
-                    
+                    <div class="tec"id="react"><img src="media/java.png" alt="java" title="Java"></div>
+                    <div class="tec"id="react"><img src="media/springboot.png" alt="spring-boot" title="Spring-Boot"></div>                    
+                    <div class="tec"id="mysql"><img src="media/mysql.png" alt="mysql" title="MySQL"></div>
+                    <div class="tec" id="html"><img src="media/html.png" alt="html" title="Html"></div>
+                    <div class="tec"id="css"><img src="media/css.png" alt="css" title="Css"></div>
+                    <div class="tec" id="js"><img src="media/js.png" alt="js" title="JavaScript"></div>
+                    <div class="tec"id="node"><img src="media/node.ico" alt="node" title="NodeJS"></div>
                 </div>
             </div>
         </div>
@@ -144,6 +153,9 @@
             </div>
             <div class="socials flex">
                 <div class="redesSoc flex">
+                    <div class="wpp icons flex">
+                        <a href="https://wa.me/5538988344392" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
                     <div class="email icons flex">
                         <a href= "mailto:fabio.s.dev@outlook.com?" subject="link HTML"><i class="fa-regular fa-envelope"></i></a>
                     </div>
@@ -168,5 +180,11 @@
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="https://kit.fontawesome.com/671d60d367.js" crossorigin="anonymous"></script>
+    <!-- EmailJS , irá funcionar para o contato-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>(function(){
+        emailjs.init("aH5iFo4ZMlsja9Vnc");
+    })();</script>
+    
 </body>
 </html>
