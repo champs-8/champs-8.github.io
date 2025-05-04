@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador regressivo de Fábio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="d1">
+            <input type="radio" name="func" id="contador" checked><p class="func"><label for="contador">Contador Regressivo</label></p>
+            <input type="radio" name="func" id="cronometro"><p class="func"><label for="cronometro">Cronômetro</label></p>
+            <div id="d2">
+                <div id="hora" class="time"><input type="number" name="selhora" id="selhora" class="seletores" max="23" min="00" minlength="0" maxlength="2" onclick="zera(id)"></div><p>:</p>
+                <div id="min" class="time"><input type="number" name="selmin" id="selmin" class="seletores" max="59" min="00" minlength="0" maxlength="2" onclick="zera(id)"></div><p>:</p>
+                <div id="seg" class="time"><input type="number" name="selseg" id="selseg" class="seletores" max="59" min="00" minlength="0" maxlength="2" onclick="zera(id)"></div>
+            </div>
+            <span>
+                <input type="button" value="Iniciar" class="btn">
+                <input type="button" value="Zerar" class="btn" id="zerar" onclick="zerar()">
+                <input type="button" value="Função" class="btn">
+            </span>
+        </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

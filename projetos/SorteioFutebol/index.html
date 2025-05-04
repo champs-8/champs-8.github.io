@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;1,100&family=Kanit:wght@100&family=Poppins:wght@100&family=Quicksand:wght@300;400&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteio de futebol Online</title>
+</head>
+<body>
+    <main>
+        <div class="flex title" >
+            <h1>Sorteio de times Online</h1>
+        </div>
+        <div class="flex justify-center father ">
+            <div class="flex inputs">
+                <div class="qtdtimes">
+                    <label for="qtdTimes">Quantidade de times: </label>
+                    <select name="qtdTimes" id="qtdTimes">
+                        <option value="" disabled selected></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="qtdpessoa">
+                    <label for="qtdpessoa">Pessoas por time: </label>
+                    <input type="number" name="qtdpessoa" id="qtdpessoa" min="1" placeholder="Ex: 6">
+                </div>
+                <div class="qtdplayer">
+                    <label for="qtdplayer">Jogadores partipantes: </label>
+                    <span id="multiply" class=" flex justify-center align-center"></span>
+                    <!-- <input type="number" name="qtdplayer" id="qtdplayer" min="1" placeholder="Ex: 18"> -->
+                </div>
+                <div id="btnList" class="btnList flex">
+                    <button id="generate" onclick="teste()">Gerar lista</button>
+                    <button id="clear" onclick="limpar()">Limpar valores</button>
+                </div>
+                <div class="pc">
+                    <div id="list" class="list column flex">
+                        <!-- <h4 class="flex justify-center">Cadastre os jogadores</h4> -->
+                        <!-- <div id="player0" class="player"><input type="text" class="namePlayer flex" name="player0" id="player0" placeholder="Jogador0"></div> -->
+                    </div>
+                </div>
+                <div class="flex sorteados justify-center">
+                    <!-- vai compor a lista das pessoas sorteadas por time -->
+                    <!-- vai ter sections segundo a quantidade de times -->
+                    <div id="sorteados" class="flex">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="flex justify-center align-center">
+            Create by Fábio Santos || ÇHÄMP$ &#169; 2022
+            <span class="flex justify-center align-center"><br><a href="https://www.instagram.com/fabio.s8/" target="_blank" rel="noopener noreferrer">Instagram</a></span>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

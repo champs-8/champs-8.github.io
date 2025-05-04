@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="main flex">
+        <h3>Password Generator</h3>
+        <div class="content flex">
+            <div class="password flex" id="password">
+                <input type="text" name="textRandom" id="textRandom"> 
+                <button id="copy">Copy</button>
+            </div>
+            <div class="inputs flex">
+                <div class="length">
+                    <div>
+                        <label for="charset">Character Length</label>
+                        <span id="quantity">8</span>
+                    </div>
+                    <input type="range" name="charset" id="charset" value="8" min="4" max="16">
+                    
+                </div>
+                <div class="configs">
+                    <div class="check"><input type="checkbox" name="upper" id="upper"checked>
+                    <label for="upper">Include Uppercase</label></div>
+                    <div class="check"><input type="checkbox" name="lower" id="lower"checked>
+                    <label for="lower">Include Lowercase</label></div>
+                    <div class="check"><input type="checkbox" name="number" id="number"checked>
+                    <label for="number">Include Numbers</label></div>
+                    <div class="check"><input type="checkbox" name="symbols" id="symbols" >
+                    <label for="symbols">Include Symbols</label></div>
+                </div>
+                <div class="segurity">
+
+                </div>
+                <button id="generate" onclick="generate()">GENERATE</button>
+            </div>
+        </div>
+    </div>
+    <footer class="flex">
+        Create By <a href="#">&nbsp; Fábio Santos </a> &nbsp;|| ÇHÄMP$ &#9415; 2023
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

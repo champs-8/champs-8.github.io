@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,300;1,100&family=Kanit:wght@100&family=Poppins:wght@100&family=Quicksand:wght@300;400&family=Roboto:wght@100;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg: rgb(255, 136, 0);
+    --bg1: rgba(241, 241, 241, 0.726);
+    --bginput:rgba(190, 190, 190, 0.726);
+    --bgsection:rgba(247, 255, 179, 0.253);
+    --shadow:rgba(128, 128, 128, 0.418);
+    --sizefont: 16pt;
+    --fonttitle: 'Poppins', sans-serif;
+    --fontinputs: 'Quicksand', sans-serif;
+    --fontbtns:'Roboto', sans-serif;
+    --fontbtns2: 'Kanit', sans-serif;
+    --fontdivssec: 'IBM Plex Mono', monospace;
+
+}
+body {
+    background-color: var(--bg);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    top: -20px;
+}
+/* configuração para desktop */
+.father {
+    width: 85vw;
+    height: 80vh;
+    background: var(--bg1);
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px 5px var(--shadow), -2px 2px 10px 5px var(--shadow);
+    scrollbar-width: none;
+    overflow-y: scroll;
+}.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.grid{
+    display: grid;
+}
+.title h1{
+    font-family: var(--fonttitle);
+}
+.inputs {
+    flex-direction: column;
+    width: 70vw;
+    font-size: var(--sizefont);
+    font-family: var(--fontinputs);
+    margin: 2rem;
+}
+.inputs input, .inputs select {
+    outline: none;
+    font-family:var(--fontinputs);
+}
+.qtdtimes, .qtdpessoa, .qtdplayer, .player{
+    margin-bottom: 1rem;
+    background-color: var(--bginput);
+    width: initial;
+    padding: .5em 5em;
+    border-radius: 15px;
+}
+select, input[type="number"] {
+    text-align: center;
+    width: 25%;
+    float: right;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    margin-right: 1em;
+    font-size: .8em;
+}
+.btnList {
+    justify-content: center;
+    margin-top: -5px;
+}
+.btnList button, .list button {
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg);
+    margin: 5px;
+    font-family: var(--fontbtns);
+    font-weight: 300;
+    font-size: 80%;
+    outline: none;
+}
+.btnList button:active, .list button:active {
+    background-color: rgb(211, 112, 0);
+    animation: btn .1s ease ;
+}
+.list button#sortear {
+    width: 10em;
+}
+@keyframes btn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.qtdplayer {
+    align-items: center;
+}
+.qtdplayer span {
+    font-size: 70%;
+    float: right;
+    color:gray;
+    padding-top: .2em;
+
+}
+.namePlayer, .sortPlayer {
+    background-color: transparent;
+    border: none;
+    font-size: 80%;
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.list {
+    margin-top: 15px;
+    display: none;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.list button {
+    width: 30vw;
+}
+.list h4 {
+    font-size: 70%;
+    margin-bottom: 5px;
+    font-family: var(--fontbtns);
+}
+.player {
+    width: 40vw;
+    justify-content: center;
+}
+.namePlayer {
+    text-align: center;
+}
+.namePlayer::placeholder{
+    text-align: center;
+}
+ /* div que vai entrar as sections */
+ #sorteados {
+    padding: 5px;
+    flex-direction: column;
+}
+/* section dos times */
+.team {
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color: var(--bgsection);
+    width: 65vw;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+/* div como nome do sorteado */
+.sortPlayer {
+    flex-direction: column;
+    background-color: var(--bginput);
+    font-family: var(--fontinputs);
+    width: 80%;
+    margin: .2em;
+    padding: .4em;
+    border-radius: 15px;
+}
+footer {
+    margin-top: 8px;
+    width: 100vw;
+    flex-direction: column;
+    font-family:var(--fontinputs);
+    font-weight: 400;
+    font-size: 10pt;
+}
+footer a{
+    text-decoration: none;
+}
+footer a:visited {
+    color: white;
+}
+/* condigurando a track */
+/* barra toda */
+::-webkit-scrollbar {
+    width: .4em;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track:hover {
+    background: rgb(170, 170, 170);
+}
+/* bolinha de rolagem */
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+}
+
+/* configuração para celular */
+@media (max-width:520px) {
+    .inputs {
+        width: 100vw;
+    }
+    .qtdtimes, .qtdpessoa, .qtdplayer, .player{
+        padding: .5em;
+    }
+    #qtdTimes {
+        width:25%;
+    }
+    #qtdplayer {
+        width: 20%;
+    }
+    select, input[type="number"] {
+        display: block;
+        width: 30%;
+    }
+    .qtdplayer span {
+        float: left;
+        padding-left: .2em;
+    }
+    .btnList {
+        margin-left: 1em;
+    }
+    /* configurando a lista de aleatorios 
+    a div geral dos sorteados*/
+    .sorteados {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

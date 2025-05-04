@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --colorPrimary: rgb(0, 153, 224);
+    --bgInput: rgb(44, 44, 44);
+}
+body {
+    background-color: rgba(8, 8, 8, 0.959);
+    color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.flex {
+    display: flex;
+}
+.main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    height: 90vh;
+}
+.content {
+
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.password {
+    background-color: var(--bgInput);
+    width: 100%;
+    height: 2em;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+.inputs {
+    flex-direction: column;
+    background-color:  var(--bgInput);
+    min-width: 250px;
+    width: 30vw;
+    padding: 15px;
+    gap: 10px;
+    box-shadow: 2px 2px 5px 10px rgba(26, 26, 26, 0.103);
+    justify-content: center;
+    font-weight: 300;
+}
+.length {
+    width: 100%;
+}
+#charset {
+    width: 100%;
+}
+#quantity {
+    float: right;
+    padding-right: 15px;
+}
+#textRandom {
+    background-color: var(--bgInput);
+    outline: none;
+    border: none;color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+footer {
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    width: auto;
+}
+a {
+    text-decoration: none;
+}
+button {
+    width: max-content;
+    padding: 4px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+#copy {
+    background: transparent;
+    color: white;
+}
+#copy:hover, #generate:hover {
+    cursor: pointer;
+}
+#generate {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 20px;
+}
