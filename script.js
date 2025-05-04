@@ -17,22 +17,22 @@ const verifyDesc = () => {
     let linkProject = document.getElementById('linkProject');
     if(idActive == 0) {
         spanDesc.innerHTML = 'Uma calculadora que faz todas as contas báscias necessárias para o nosso dia a dia, com um desing mais "dark", para menor desgaste visual do usuário'
-    }   linkProject.href = 'https://champs-8.github.io/Projetos/Calculadora/index.html'
+    }   linkProject.href = 'https://champs-8.github.io/projetos/Calculadora/index.html'
     if(idActive == 1) {
         spanDesc.innerHTML = 'Um temporizador com função de cronômetro e contador regressivo, ideal para atividades simples que precisa de uma exatidão de tempo'
-        linkProject.href = 'https://champs-8.github.io/Projetos/Despertador/index.html';
+        linkProject.href = 'https://champs-8.github.io/projetos/Despertador/index.html';
     }
     if(idActive == 2) {
         spanDesc.innerHTML = 'Um sorteador de times, independente do que for jogar ou se divertir, poderá utilizá-lo para poder separar times com confiança e agilidade'
-        linkProject.href = 'https://champs-8.github.io/Projetos/SorteioFutebol/index.html';
+        linkProject.href = 'https://champs-8.github.io/projetos/SorteioFutebol/index.html';
     }
     if(idActive == 3) {
         spanDesc.innerHTML = 'Uma página criada para baixar mídias diretas do YouTube com segurança e praticidade, em diversos formatos e qualidades, excelente para quem gosta de edições.';
-        linkProject.href = 'https://champs-8.github.io/Projetos/Down_midias/index.html';
+        linkProject.href = 'https://champs-8.github.io/projetos/Down_midias/index.html';
     }
     if(idActive == 4) {
         spanDesc.innerHTML = 'Precisa criar senhas com certa complixadade e está sem inspiração? um gerador de senhas online e bem simples. Tudo o que precisa é selecionar o que você quer e copiar.';
-        linkProject.href = 'https://champs-8.github.io/Projetos/GeradorDeSenhas/index.html';
+        linkProject.href = 'https://champs-8.github.io/projetos/GeradorDeSenhas/index.html';
     }
 }
 
