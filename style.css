@@ -70,20 +70,14 @@ body {
     height: 100vh;
 }
 .hero .left img {
-    width: 350px;
-    z-index: 3;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     position: relative;
-}
-.hero .left::after {
-    content: '';
-    width: 300px;
-    height: 471px;
-    left: 188px;
-    top: 175px;
-    position: absolute;
-    border: 2em solid var(--primary);
     z-index: 1;
-} 
+    border-radius: 10px; /* opcional */
+    box-shadow: 10px 10px var(--primary); /* sombra */
+}
 .left .logo img{
     width: 60px;
 }
@@ -462,7 +456,7 @@ footer span {
     font-size: .8em;
     color: #c0c0c0
 }
-@media screen and (max-width: 400px ){
+@media screen and (max-width: 440px ){
     body {
         margin: 0;
         width: 100vw;
@@ -615,5 +609,77 @@ footer span {
     .fa-facebook,
     .fa-whatsapp{
         font-size: 2em;
+    }
+}
+/*Responsividade para tela medias e grandes*/
+@media screen and (min-width: 441px) and (max-width: 1024px) {
+    body {
+        padding: 0 2rem;
+        font-size: 1rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .hero .left img {
+        width: 250px;
+    }
+
+    .hero .right {
+        margin: 2rem 0 0 0;
+    }
+
+    .about .container {
+        flex-direction: column-reverse;
+        padding: 2rem 1rem;
+        height: auto;
+    }
+
+    .about .left img {
+        width: 250px;
+        height: auto;
+    }
+
+    .tecs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tecs img {
+        width: 60px;
+    }
+
+    .projects .card img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs .input-column,
+    .txtarea textarea {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .txtarea {
+        padding: 0 1rem;
+    }
+
+    .txtarea button {
+        width: 100%;
+        max-width: 200px;
+        margin: 1rem auto;
+    }
+
+    #btnHome {
+        left: 90%;
     }
 }
