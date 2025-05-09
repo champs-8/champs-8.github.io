@@ -20,14 +20,14 @@
                         <img src="media/logo.png" alt="logo" id="logo">
                     </div>
                     <div>
-                        <button id="s" class="ancoras">sobre</button>
-                        <button id="t" class="ancoras">conhecimento</button>
-                        <button id="p" class="ancoras">projetos</button>
-                        <button id="m" class="ancoras">mais</button>
+                        <a href="#about" id="s" class="ancoras">sobre</a>
+                        <a href="#tecnologias" id="t" class="ancoras">conhecimento</a>
+                        <a href="#projects" id="p" class="ancoras">projetos</a>
+                        <a id="" class="ancoras">mais</a>
                     </div>
                 </div>
                 <div class="right">
-                    <button class="btn btn-primary" id="btnCont">Contato</button>
+                    <a href="#contact"><button class="btn btn-primary" id="btnCont">Contato</button></a>
                     <p>Última atualização: <span id="lastUpdate"></span></p>
                 </div>
             </nav>
@@ -92,19 +92,19 @@
             <h1>Meus projetos</h1>
             <div class="card flex">
                 <div class="proj flex activeSlide">
-                    <img src="/media/calc.jpg" alt="calculadora">
+                    <img src="./media/calc.jpg" alt="calculadora">
                 </div>
                 <div class="proj flex">
-                    <img src="/media/cron.jpg" alt="cronometro">
+                    <img src="./media/cron.jpg" alt="cronometro">
                 </div>
                 <div class="proj flex">
-                    <img src="/media/sort.jpg" alt="Sorteio times">
+                    <img src="./media/sort.jpg" alt="Sorteio times">
                 </div>
                 <div class="proj flex">
-                    <img src="/media/dlm.png" alt="Download midias">
+                    <img src="./media/dlm.png" alt="Download midias">
                 </div>
                 <div class="proj flex">
-                    <img src="/media/password.png" alt="Password Generator">
+                    <img src="./media/password.png" alt="Password Generator">
                 </div>
 
             </div>
@@ -118,14 +118,14 @@
                     <!-- [3] https://champs-8.github.io/Projetos/Down_midias/index.html -->
                     <!-- [4] https://champs-8.github.io/Projetos/GeradorDeSenhas/index.html -->
                     <div class="nextPrevious flex">
-                        <img src="/media/setaPraBaixo.png" id="btnNext" alt="Next Card">
-                        <img src="/media/setaPraCima.png" id="btnPrevious" alt="btnPrevious Card">
+                        <img src="./media/setaPraBaixo.png" id="btnNext" alt="Next Card">
+                        <img src="./media/setaPraCima.png" id="btnPrevious" alt="btnPrevious Card">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact flex">
+    <section class="contact flex" id="contact">
         <div class="container flex column">
             <h1>Contato</h1>
             <div class="formulario flex">
@@ -145,9 +145,9 @@
                         </div>
                     </div>
                     <div class="txtarea flex">
-                        <label for="mensagem">Menssagem</label>
+                        <label for="mensagem">Mensagem</label>
                         <textarea name="mensagem" id="mensagem" cols="100" rows="5" placeholder="Envie um feedback"></textarea>
-                        <button type="submit" id="message">Enviar menssagem</button>
+                        <button type="submit" id="message">Enviar mensagem</button>
                     </div>
                 </form>
             </div>
