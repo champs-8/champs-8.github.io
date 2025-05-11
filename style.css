@@ -84,6 +84,7 @@ body {
 .hero .right {
     /* color: var(--white); */
     margin-top: -7rem;
+    font-size: 1.1rem;
 }
 .hero .right h6{
     font-size: 1.6rem;
@@ -169,6 +170,7 @@ section.about {
     align-items: center;
 }
 section.about .container {
+    font-size: 1.1rem;
     padding: 2em;
     height: 90vh;
     align-items: center;
@@ -233,6 +235,7 @@ section.about p {
 .tec {
     display: flex;
     align-items: center;
+    margin: 0.3em;
 }
 .tecs img {
     width: 4em;
@@ -246,7 +249,7 @@ section.about p {
 /* configurando meus projetos */
 .projects {
     text-align: center;
-    justify-content: center; 
+    justify-content: center;
 }
 .projects h1 {
     padding: 1em;
@@ -289,6 +292,7 @@ section.about p {
     height: 200px;
     align-items: center;
     justify-content: center;
+    font-size: 1.1rem;
 }
 .descLink img {
     width: 3em;
@@ -300,6 +304,7 @@ span#spanDesc {
     text-align: center;
     justify-content: center;
     padding: .5em 0;
+    font-size: 1.1rem;
 }
 .nextPrevious img:hover {
     transform: scale(1.1);
@@ -307,6 +312,69 @@ span#spanDesc {
 .nextPrevious img:active {
     transform: scale(.9);
 }
+/* configurando o mais */
+.more {
+    padding:4rem 1rem;
+}
+.more .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.more h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.infos h2 {
+    display: flex;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.infos p {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .more h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .infos h2 {
+        font-size: 1.1rem;
+    }
+
+    .infos {
+        font-size: 0.95rem;
+    }
+
+    .more .container {
+        align-items: center;
+        text-align: center;
+    }
+
+    .infos p {
+        margin-left: 0;
+    }
+}
+
 
 /* configurando o contato */
 .contact {
