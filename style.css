@@ -46,7 +46,7 @@ body {
 }
 .ancoras {
     font-family: 'Poppins', sans-serif;
-    font-size: 100%;
+    font-size: 1.2rem;
     background: transparent;
     color: var(--white);
     text-transform: uppercase;
@@ -76,15 +76,15 @@ body {
     position: relative;
     z-index: 1;
     border-radius: 10px; /* opcional */
-    box-shadow: 10px 10px var(--primary); /* sombra */
+    box-shadow: 10px 10px 10px var(--primary); /* sombra */
 }
 .left .logo img{
     width: 60px;
 }
 .hero .right {
-    /* color: var(--white); */
     margin-top: -7rem;
     font-size: 1.1rem;
+    padding-left: 4rem;
 }
 .hero .right h6{
     font-size: 1.6rem;
@@ -103,6 +103,7 @@ body {
 .hero .right p {
     line-height: 1.9;
     margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
 a#btn-down {
     text-decoration: none;
@@ -159,7 +160,8 @@ a#btn-down:hover {
 section {
     padding: 3rem;
 }
-section.about {
+/* =============== configurando sobre ================= */
+.about {
     margin: 0;
     width: 98.75vw;
     position: relative;
@@ -169,7 +171,7 @@ section.about {
     justify-content: center;
     align-items: center;
 }
-section.about .container {
+.about .container {
     font-size: 1.1rem;
     padding: 2em;
     height: 90vh;
@@ -178,27 +180,27 @@ section.about .container {
     width: 90vw;
     margin: 0;
 }
-section.about .left{
+.about .left{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-section.about  h1{
+.about  h1{
     margin-bottom: 1rem;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     font-weight: 600;
 }
-section.about h1 span , section.about p span{
+.about h1 span , section.about p span{
     color: var(--primary);
 }
-section.about h3 {
-    font-size: 1rem;
+.about h3 {
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     font-weight: 600;
 }
-section.about p {
+.about p {
     font-family: 'Lato', sans-serif;
-    color: rgb(105, 105, 105);
+    color: rgb(182, 182, 182);
     line-height: 1.9;
 }
 .about .phrase {
@@ -216,10 +218,16 @@ section.about p {
     position: relative;
     top: -25px;
 }
-/* configurando parte da tecnologia */
+.about img {
+    border-radius: 10px;
+}
+/* ===========configurando parte da tecnologia ========*/
 .tecnologias {
     text-align: center;
     height: 100vh;
+}
+.tecnologias h1 {
+    font-size: 2.2em;
 }
 .tecnologias .container, .projects .container {
     flex-direction: column;
@@ -246,13 +254,15 @@ section.about p {
     width: 8em;
 }
 
-/* configurando meus projetos */
+/* ============ configurando meus projetos ================*/
 .projects {
     text-align: center;
     justify-content: center;
+    padding-top: 0;
 }
 .projects h1 {
     padding: 1em;
+    font-size: 2.2em;
 }
 .projects .container {
     justify-content: center;
@@ -312,7 +322,8 @@ span#spanDesc {
 .nextPrevious img:active {
     transform: scale(.9);
 }
-/* configurando o mais */
+
+/*  ================ configurando o mais  ================*/
 .more {
     padding:4rem 1rem;
 }
@@ -325,7 +336,7 @@ span#spanDesc {
 }
 
 .more h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
@@ -375,11 +386,13 @@ span#spanDesc {
     }
 }
 
-
 /* configurando o contato */
 .contact {
     justify-content: center;
     align-items: center;
+}
+.contact h1 {
+    font-size: 2.2em;
 }
 .contact .container {
     justify-content: center;
@@ -679,7 +692,7 @@ footer span {
         font-size: 2em;
     }
 }
-/*Responsividade para tela medias e grandes*/
+/*Responsividade para tela medias e grandes ==============================*/ 
 @media screen and (min-width: 441px) and (max-width: 1024px) {
     body {
         padding: 0 2rem;
