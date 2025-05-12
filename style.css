@@ -26,8 +26,15 @@ header nav .left a{
 header nav .left a:hover {
     color: var(--primary);
 }
+#navRight {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 header nav {
     padding: 2rem 0 1rem 0;
+    width: 100vw;
+    justify-content: space-around;
 }
 header nav .logo {
     margin-right: 3rem;
@@ -36,8 +43,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bgDark);
     color: var(--white);
-    margin: 0 10rem;
     letter-spacing: .5px;
+    overflow-x: hidden;
 }
 .container {
     max-width: 100vw;
@@ -65,15 +72,21 @@ body {
     font-size: 0.8em;
 }
 .hero {
-    padding-top: 1rem;
-    padding-bottom:  3rem;
+    width: 100vw;
+    padding: 1rem;
+    /* padding-top: 1rem;
+    padding-bottom:  3rem; */
     height: 100vh;
 }
-.hero .left img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
+.hero .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+}
+.hero .left img {
+    width: 350px;
+    height: auto;
     z-index: 1;
     border-radius: 10px; /* opcional */
     box-shadow: 10px 10px 10px var(--primary); /* sombra */
@@ -84,7 +97,6 @@ body {
 .hero .right {
     margin-top: -7rem;
     font-size: 1.1rem;
-    padding-left: 4rem;
 }
 .hero .right h6{
     font-size: 1.6rem;
@@ -96,6 +108,7 @@ body {
     font-weight: 100;
     line-height: 1.2;
     margin-bottom: 2rem;
+    overflow: hidden;
 }
 .hero .right h1 span {
     color: var(--primary);
@@ -104,6 +117,9 @@ body {
     line-height: 1.9;
     margin-bottom: 2rem;
     font-size: 1.2rem;
+}
+#div_Down{
+    overflow: hidden;
 }
 a#btn-down {
     text-decoration: none;
@@ -163,10 +179,8 @@ section {
 /* =============== configurando sobre ================= */
 .about {
     margin: 0;
-    width: 98.75vw;
-    position: relative;
-    padding: 3rem 0;
-    left: -10em;
+    width: 100vw;
+    padding: 3rem 1rem;
     background: linear-gradient(to left,#000000, #040404,#161616, #202020);
     justify-content: center;
     align-items: center;
@@ -174,7 +188,7 @@ section {
 .about .container {
     font-size: 1.1rem;
     padding: 2em;
-    height: 90vh;
+    height: 100%;
     align-items: center;
     justify-content: center;
     width: 90vw;
@@ -213,7 +227,7 @@ section {
 .about .phrase  span{
     color: var(--primary);
     font-size: 50pt;
-    height: 30px;
+    height: 100%;
     float: inline-start;
     position: relative;
     top: -25px;
@@ -223,6 +237,7 @@ section {
 }
 /* ===========configurando parte da tecnologia ========*/
 .tecnologias {
+    width: 100vw;
     text-align: center;
     height: 100vh;
 }
@@ -256,6 +271,7 @@ section {
 
 /* ============ configurando meus projetos ================*/
 .projects {
+    width: 100vw;
     text-align: center;
     justify-content: center;
     padding-top: 0;
@@ -271,27 +287,31 @@ section {
     flex-direction: column;
 }
 .card img {
-    width: 55em;
+    width: 80%;
+    height: auto;
 }
 .proj {
     display: none;
     justify-content: center;
     align-items: center;
-    padding: 0 3em;
     flex-direction: column;
-    height: 400px;
+    height: auto;
 }
 .activeSlide {
     display: flex;
 }
 .nextcard {
-    padding: 0 3em;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .nextcard a {
     color: var(--primary);
 }
 .nextcard .descLink {
+
+    width: 80%;
+    height: 100%;
     padding: .5em;
     flex-direction: column;
     border: 1px solid gray;
@@ -316,6 +336,9 @@ span#spanDesc {
     padding: .5em 0;
     font-size: 1.1rem;
 }
+#spanTec{
+    font-weight: 600;
+}
 .nextPrevious img:hover {
     transform: scale(1.1);
 }
@@ -326,6 +349,7 @@ span#spanDesc {
 /*  ================ configurando o mais  ================*/
 .more {
     padding:4rem 1rem;
+    width: 100vw;
 }
 .more .container {
     max-width: 1200px;
@@ -388,6 +412,7 @@ span#spanDesc {
 
 /* configurando o contato */
 .contact {
+    width: 100vw;
     justify-content: center;
     align-items: center;
 }
@@ -738,7 +763,6 @@ footer span {
 
     .projects .card img {
         width: 100%;
-        max-width: 500px;
     }
 
     .inputs {

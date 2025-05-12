@@ -15,23 +15,31 @@ for (let a of projs ) {
 //inserindo os descrições dos projetos nos spans
 const verifyDesc = () => {
     let linkProject = document.getElementById('linkProject');
+    // informar as tecnologias utilizadas
+    let spanTec = document.getElementById('spanTec');
     if(idActive == 0) {
         spanDesc.innerHTML = 'Uma calculadora que faz todas as contas báscias necessárias para o nosso dia a dia, com um desing mais "dark", para menor desgaste visual do usuário'
-    }   linkProject.href = 'https://champs-8.github.io/calculadora'
+        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
+        linkProject.href = 'https://champs-8.github.io/calculadora';
+    }
     if(idActive == 1) {
         spanDesc.innerHTML = 'Um temporizador com função de cronômetro e contador regressivo, ideal para atividades simples que precisa de uma exatidão de tempo'
+        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
         linkProject.href = 'https://champs-8.github.io/contadorTime';
     }
     if(idActive == 2) {
         spanDesc.innerHTML = 'Um sorteador de times, independente do que for jogar ou se divertir, poderá utilizá-lo para poder separar times com confiança e agilidade'
+        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
         linkProject.href = 'https://champs-8.github.io/sorteio';
     }
     if(idActive == 3) {
         spanDesc.innerHTML = 'Uma página criada para baixar mídias diretas do YouTube com segurança e praticidade, em diversos formatos e qualidades, excelente para quem gosta de edições.';
+        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
         linkProject.href = 'https://champs-8.github.io/downMidias';
     }
     if(idActive == 4) {
         spanDesc.innerHTML = 'Precisa criar senhas com certa complixadade e está sem inspiração? um gerador de senhas online e bem simples. Tudo o que precisa é selecionar o que você quer e copiar.';
+        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
         linkProject.href = 'https://champs-8.github.io/gerador-senhas';
     }
 }

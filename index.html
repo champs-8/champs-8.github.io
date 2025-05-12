@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="container">
-            <nav class="flex items-center justify-between">
+            <nav class="flex items-center">
                 <div class="left flex justify-right">
                     <div class="logo">
                         <a href="#hero"><img src="media/logo.png" alt="logo" id="logo"></a>
@@ -26,7 +26,7 @@
                         <a href="#more" id="#m" class="ancoras">mais</a>
                     </div>
                 </div>
-                <div class="right">
+                <div class="right" id="navRight">
                     <a href="#contact"><button class="btn btn-primary" id="btnCont">Contato</button></a>
                     <p>Última atualização: <span id="lastUpdate"></span></p>
                 </div>
@@ -41,8 +41,8 @@
             <h6>Fábio Santos</h6>
             <h1>I'm a Web <br><span> Developer </span></h1>
             <p>Chamo-me Fábio, mas pode me chamar de CHAMPS &#128521;<br>Tenho 23 anos e mostrarei um pouco do trabalho que amo desenvolver. Divirta-se!</p>
-            <div>
-                <a id='btn-down' href="docs/Curriculo_Fabio_Santos.pdf" class="btn btn-secundary" download="Fábio_Santos.pdf">DOWNLOAD CV</a>
+            <div id="div_Down">
+                <a id='btn-down' href="docs/Curriculo_Fabio_Santos.pdf" class="btn btn-secundary" download="Curriculo_Fabio_Santos.pdf">DOWNLOAD CV</a>
             </div>
        </div>
     </div>
@@ -83,6 +83,7 @@
                     <div class="tec"id="css"><img src="media/css.png" alt="css" title="Css"></div>
                     <div class="tec" id="js"><img src="media/js.png" alt="js" title="JavaScript"></div>
                     <div class="tec"id="node"><img src="media/node.ico" alt="node" title="NodeJS"></div>
+                    <div class="tec"id="git"><img src="media/git.png" alt="git" title="Git"></div>
                 </div>
             </div>
         </div>
@@ -92,20 +93,23 @@
             <h1>Meus projetos</h1>
             <div class="card flex">
                 <div class="proj flex activeSlide">
-                    <img src="./media/calc.jpg" alt="calculadora">
+                    <img src="./media/calc.jpg" alt="calculadora" title="Calculadora">
                 </div>
                 <div class="proj flex">
-                    <img src="./media/cron.jpg" alt="cronometro">
+                    <img src="./media/cron.jpg" alt="cronometro" title="Cronômetro">
                 </div>
                 <div class="proj flex">
-                    <img src="./media/sort.jpg" alt="Sorteio times">
+                    <img src="./media/sort.jpg" alt="Sorteio times" title="Sorteio de Times">
                 </div>
                 <div class="proj flex">
-                    <img src="./media/dlm.png" alt="Download midias">
+                    <img src="./media/dlm.png" alt="Download midias" title="Download de Mídias">
                 </div>
                 <div class="proj flex">
-                    <img src="./media/password.png" alt="Password Generator">
+                    <img src="./media/password.png" alt="Password Generator" title="Gerador de Senhas">
                 </div>
+                <!-- <div class="proj flex">
+                    <img src="./media/champizza.gif" alt="pizzaria" title="Pizzaria">
+                </div> -->
 
             </div>
             <div id="nextcard" class="nextcard flex">
