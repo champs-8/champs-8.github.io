@@ -563,6 +563,7 @@ footer span {
         float: right;
         text-align: center;
         margin: 0;
+        padding: 0;
     }
     .hero .right h1{
         width: 50%;
@@ -696,6 +697,7 @@ footer span {
 @media screen and (min-width: 441px) and (max-width: 1024px) {
     body {
         padding: 0 2rem;
+        margin: 0;
         font-size: 1rem;
     }
 
