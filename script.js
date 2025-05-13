@@ -45,7 +45,7 @@ const verifyDesc = () => {
     if(idActive == 5) {
         spanDesc.innerHTML = 'Um projeto voltado para donos de comércios, onde o mesmo pode criar um cardápio online, com a possibilidade de adicionar e remover produtos, com um design simples e fácil de usar. Construído com uma API de banco de dados, o que facilita a adição e remoção de produtos.';
         spanTec.innerHTML = 'Feito com React, React Native, TypeScript, NextJs, NodeJs, Express, PostgreSQL, Prisma, Sass';
-        linkProject.href = 'https://champs-8.github.io/gerador-senhas';
+        linkProject.href = 'https://champizza-web.vercel.app';
     }
 }
 
