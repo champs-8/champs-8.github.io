@@ -577,7 +577,7 @@ footer span {
         padding: 0;
         flex-direction: column;
         text-align: center;
-        height: auto;
+        height: 100vh;
     }
     .hero .left img {
         margin-top: 2em;
