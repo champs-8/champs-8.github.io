@@ -74,8 +74,6 @@ body {
 .hero {
     width: 100vw;
     padding: 1rem;
-    /* padding-top: 1rem;
-    padding-bottom:  3rem; */
     height: 100vh;
 }
 .hero .left {
@@ -254,12 +252,12 @@ section {
     padding: 1em;
     justify-content: center;
 }
-
-.tec {
-    display: flex;
-    align-items: center;
-    margin: 0.3em;
+.tecs{
+    max-width: 70vw;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 .tecs img {
     width: 4em;
     margin: 0 .4em;
@@ -267,6 +265,11 @@ section {
 .tecs #mysql img {
     height: 100%;
     width: 8em;
+}
+.tec {
+    display: flex;
+    align-items: center;
+    margin: 0.3em;
 }
 
 /* ============ configurando meus projetos ================*/
@@ -337,7 +340,8 @@ span#spanDesc {
     font-size: 1.1rem;
 }
 #spanTec{
-    font-weight: 600;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .nextPrevious img:hover {
     transform: scale(1.1);
@@ -502,6 +506,7 @@ span#spanDesc {
 }
 #btnHome:hover {
     animation: btnAnim .8s infinite;
+    transform: scale(1.1);
 }
 #btnHome img {
     width: 3.5em;
@@ -509,7 +514,6 @@ span#spanDesc {
 }
 #btnHome img:hover {
     cursor: pointer;
-    transform: scale(1.1);
     border-radius: 50%;
 }
 @keyframes btnAnim {
@@ -562,6 +566,8 @@ footer span {
     font-size: .8em;
     color: #c0c0c0
 }
+
+/* ============================================================================= */
 @media screen and (max-width: 440px ){
     body {
         margin: 0;
@@ -572,12 +578,12 @@ footer span {
         display: none;
     }
     .hero {
-        height: 100vh;
+        height: auto;
+        min-height: 100vh;
         width: 100vw;
-        padding: 0;
+        padding:0 0 2em 0;
         flex-direction: column;
         text-align: center;
-        height: 100vh;
     }
     .hero .left img {
         margin-top: 2em;
@@ -608,6 +614,9 @@ footer span {
         width: 100vw;
         margin: 0;
         padding: 1em 0;
+    }
+    .hero .right p {
+        margin: 0;
     }
     #about {
         margin: 0;
@@ -654,7 +663,7 @@ footer span {
         padding: 0;
     }
     .card img {
-        width: 400px;
+        max-width: 400px;
     }
     .proj {
         height: 12em;
@@ -670,7 +679,13 @@ footer span {
         border: none;
     }
     #spanDesc {
-        height: 9em;
+        height: auto;
+    }
+    .nextPrevious img:hover {
+        transform: none;
+    }
+    .nextPrevious img:active {
+        transform: scale(0.9);
     }
     .inputs {
         width: 100vw;
@@ -726,11 +741,14 @@ footer span {
     .fa-whatsapp{
         font-size: 2em;
     }
+    .redesSoc{
+        flex-wrap: wrap;
+    }
 }
 /*Responsividade para tela medias e grandes ==============================*/ 
 @media screen and (min-width: 441px) and (max-width: 1024px) {
     body {
-        padding: 0 2rem;
+        padding: 0;
         margin: 0;
         font-size: 1rem;
     }

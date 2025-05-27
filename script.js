@@ -19,32 +19,85 @@ const verifyDesc = () => {
     let spanTec = document.getElementById('spanTec');
     if(idActive == 0) {
         spanDesc.innerHTML = 'Uma calculadora que faz todas as contas báscias necessárias para o nosso dia a dia, com um desing mais "dark", para menor desgaste visual do usuário'
-        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
+        spanTec.innerHTML = `
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50"/>
+            &nbsp;
+            `;
+
+
         linkProject.href = 'https://champs-8.github.io/calculadora';
     }
     if(idActive == 1) {
         spanDesc.innerHTML = 'Um temporizador com função de cronômetro e contador regressivo, ideal para atividades simples que precisa de uma exatidão de tempo'
-        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
+        spanTec.innerHTML = `
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50"/>
+            &nbsp;
+            `;
         linkProject.href = 'https://champs-8.github.io/contadorTime';
     }
     if(idActive == 2) {
         spanDesc.innerHTML = 'Um sorteador de times, independente do que for jogar ou se divertir, poderá utilizá-lo para poder separar times com confiança e agilidade'
-        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
+        spanTec.innerHTML = `
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50"/>
+            &nbsp;
+            `;
         linkProject.href = 'https://champs-8.github.io/sorteio';
     }
     if(idActive == 3) {
         spanDesc.innerHTML = 'Uma página criada para baixar mídias diretas do YouTube com segurança e praticidade, em diversos formatos e qualidades, excelente para quem gosta de edições.';
-        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
+        spanTec.innerHTML = `
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50"/>
+            &nbsp;
+            `;
         linkProject.href = 'https://champs-8.github.io/downMidias';
     }
     if(idActive == 4) {
         spanDesc.innerHTML = 'Precisa criar senhas com certa complixadade e está sem inspiração? um gerador de senhas online e bem simples. Tudo o que precisa é selecionar o que você quer e copiar.';
-        spanTec.innerHTML = 'Feito com HTML, CSS e JavaScript';
+        spanTec.innerHTML = `
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50"/>
+            &nbsp;
+            `;
         linkProject.href = 'https://champs-8.github.io/gerador-senhas';
     }
     if(idActive == 5) {
         spanDesc.innerHTML = 'Um projeto voltado para donos de comércios, onde o mesmo pode criar um cardápio online, com a possibilidade de adicionar e remover produtos, com um design simples e fácil de usar. Construído com uma API de banco de dados, o que facilita a adição e remoção de produtos.';
-        spanTec.innerHTML = 'Feito com React, React Native, TypeScript, NextJs, NodeJs, Express, PostgreSQL, Prisma, Sass';
+        // spanTec.innerHTML = 'Feito com React, React Native, TypeScript, NextJs, NodeJs, Express, PostgreSQL, Prisma, Sass';
+        spanTec.innerHTML = `
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" title="React" alt="React" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" title="Typescript" alt="TypeSript" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" title="NextJS" alt="NextJS" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" title="NodeJS" alt="NodeJS" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" title="PostgreSQL" alt="PostgreSQL" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/prisma/prisma-original.svg" title="Prisma" alt="Prisma" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" title="Sass" alt="Sass" width="50" height="50"/>
+            &nbsp;
+            `;
         linkProject.href = 'https://champizza-web.vercel.app';
     }
 }
