@@ -659,10 +659,11 @@ footer span {
     .tecnologias .container .bottom {
         width: 100%;
     }
-    .projects {
+    .projects , .projects .container {
         width: 100%;
         margin: 0;
         padding: 0;
+        height: 100%;
     }
     .card img {
         max-width: 400px;
