@@ -27,8 +27,6 @@ const verifyDesc = () => {
             <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50"/>
             &nbsp;
             `;
-
-
         linkProject.href = 'https://champs-8.github.io/calculadora';
     }
     if(idActive == 1) {
@@ -100,6 +98,22 @@ const verifyDesc = () => {
             `;
         linkProject.href = 'https://champizza-web.vercel.app';
     }
+    if(idActive == 6) {
+        spanDesc.innerHTML = 'Trata-se do clássico jogo da velha com interações visuais, reinicialização de jogo e um design mais "clean", para uma melhor experiência do usuário, construído juntamente com uma API.';
+        spanTec.innerHTML = `
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" title="Java" alt="Java" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" title="Spring" alt="Spring" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" title="CSS3" alt="CSS" width="50" height="50"/>
+            &nbsp;
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="50" height="50"/>
+            &nbsp;
+            `;
+        linkProject.href = 'https://champs-8.github.io/jogo-da-velha';
+    }
 }
 
 //trocar a imagem e descrção    //OK
@@ -112,7 +126,6 @@ nextCard.addEventListener('click', () => {
     let active = document.querySelector('.activeSlide');
     active.classList.remove('activeSlide');
     idActive++;
-    console.log(idActive);
     arr[idActive].classList.add('activeSlide');
     
     //se o elelmento ativo for o ultimo, vai esconder a seta

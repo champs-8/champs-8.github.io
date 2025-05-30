@@ -746,6 +746,9 @@ footer span {
     .redesSoc{
         flex-wrap: wrap;
     }
+    footer span{
+        text-align:  center;
+    }
 }
 /*Responsividade para tela medias e grandes ==============================*/ 
 @media screen and (min-width: 441px) and (max-width: 1024px) {
