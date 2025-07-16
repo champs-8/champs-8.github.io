@@ -295,6 +295,10 @@ section {
     width: 80vw;
     height: auto;
 }
+.card #sudoku {
+    width: 25vw;
+    height: auto;
+}
 .proj {
     display: none;
     justify-content: center;

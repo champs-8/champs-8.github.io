@@ -116,6 +116,12 @@ const verifyDesc = () => {
             `;
         linkProject.href = 'https://champs-8.github.io/jogo-da-velha';
     }
+    if(idActive == 7) {
+        spanDesc.innerHTML = 'Jogo sudoku, desenvolvido com Java com interatividade pelo terminal. Inicialmente o usuário escolhe a quantidade de posição vazias que deseja, posteriormente escolherá a posição que deseja jogar e o número que deseja colocar.';
+        spanTec.innerHTML = `
+            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" title="Java" alt="Java" width="50" height="50"/>`;
+        linkProject.href = 'https://github.com/champs-8/sudoku';
+    }
 }
 
 //trocar a imagem e descrção    //OK
